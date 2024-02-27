@@ -32,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: registry.cn-hangzhou.aliyuncs.com/mocloud/ob-service
+          images: registry.cn-hangzhou.aliyuncs.com/mocloud/alertmanager-webhook-adapter
           tags: |
             type=sha
             type=ref,event=branch,suffix=-{{date 'YYYYMMDD'}}
